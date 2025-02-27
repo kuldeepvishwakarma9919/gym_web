@@ -4,8 +4,20 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden !important;
+    width: 100%;
+}
 
-
+.container, .container-fluid {
+    /* margin-right: 0 !important; */
+    /* padding-left: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important; */
+}
+.trainer-box{
+    cursor: pointer;
+}
 
 .h3 {
     font-size: 24px;
@@ -15,8 +27,9 @@
 }
 
 body {
+    max-width: auto;
     font-family: roboto;
-    /* font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    width: 100%;
 }
 
 .navbar {

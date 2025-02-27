@@ -1,61 +1,111 @@
-
-
 @media (max-width: 450px) {
     #broadcard h3 {
-         margin-top: 50px;
-         font-size: 40px !important;
-         margin-left: 30px;
+        margin-top: 50px;
+        font-size: 40px !important;
+        margin-left: 30px;
 
-     }  
-     .hero-left  {
-          height: 70vh;
-     }  
-     .banner-right {
-          height: 70vh;
-     }
-     .banner-right img{
-        height: 100%;
-        width: 100%;
-     }
-     .hero-left h2 {
-            font-size: 60px !important;
-     }
-
-     #membership h3 {
-         font-size: 40px !important;
-     }
-
-     .about-left h3 {
-         font-size: 40px !important;
-     }
-
-     #trainer h3 {
-         font-size: 40px !important;
-     }
-
-     #gallery h3 {
-         font-size: 40px !important;
-     }
-     /* .whatsapp-float {
-        padding: 10px 10px;
-        border-top-left-radius: 30px;
-        border-bottom-left-radius: 30px;
-        position: fixed;
-        right: 10px; 
-        bottom: 50px;
-        z-index: 1000; 
     }
 
-     .whatsapp-float img {
-        width: 60px; 
-        height: 60px;
-        background-color: #dc4535;
-        color: #fff;
-        border-radius: 50%;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease-in-out;
-    } */
+    .hero-left {
+        height: 90vh;
+    }
+
+    .banner-right {
+        height: 70vh;
+    }
+
+    .banner-right img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .hero-left h2 {
+        font-size: 60px !important;
+    }
+
+    #membership h3 {
+        font-size: 40px !important;
+    }
+
+    .about-left h3 {
+        font-size: 40px !important;
+    }
+
+    #trainer h3 {
+        font-size: 40px !important;
+    }
+
+    #gallery h3 {
+        font-size: 40px !important;
+    }
+
 }
+
+
+
+
+@media (max-width: 350px) {
+    .hero-left h2 {
+        font-size: 45px !important;
+
+    }
+
+    .broadcard-right {
+        margin-left: 20px;
+    }
+
+    .broadcard-right h4 {
+        font-size: 14px;
+    }
+
+    .broadcard-right p {
+        font-size: 12px;
+    }
+
+
+}
+
+@media (max-width: 270px) {
+    .broadcard-box {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon {
+        margin-bottom: 12px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon i{
+        font-size: 30px !important;
+    }
+
+    #membership h3{
+        font-size: 22px !important;
+    }
+
+    #broadcard h3{
+        margin-left: 10px;
+        font-size: 22px !important;
+    }
+
+    #gallery h3{
+        font-size: 22px !important;
+    }
+    #trainer h3{
+        font-size: 22px !important;
+    }
+
+    .membership-box{
+        width: 100%;
+        padding: 10px;
+    }
+}
+
 
 @media (max-width: 990px) {
     .navbar-collapse {
@@ -74,7 +124,7 @@
         margin-top: 100px;
     }
 
-    #appointmentModal .modal-content { 
+    #appointmentModal .modal-content {
         background-color: #fff;
         margin: 5% auto;
         padding: 20px;
@@ -84,9 +134,7 @@
     }
 
     #appointmentModal {
-        z-index: 999999999; 
+        z-index: 999999999;
     }
-    
+
 }
-
-
