@@ -1,3 +1,62 @@
+
+
+@media (max-width: 450px) {
+    #broadcard h3 {
+         margin-top: 50px;
+         font-size: 40px !important;
+         margin-left: 30px;
+
+     }  
+     .hero-left  {
+          height: 70vh;
+     }  
+     .banner-right {
+          height: 70vh;
+     }
+     .banner-right img{
+        height: 100%;
+        width: 100%;
+     }
+     .hero-left h2 {
+            font-size: 60px !important;
+     }
+
+     #membership h3 {
+         font-size: 40px !important;
+     }
+
+     .about-left h3 {
+         font-size: 40px !important;
+     }
+
+     #trainer h3 {
+         font-size: 40px !important;
+     }
+
+     #gallery h3 {
+         font-size: 40px !important;
+     }
+     .whatsapp-float {
+        padding: 10px 10px;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+        position: fixed;
+        right: 10px; 
+        bottom: 50px;
+        z-index: 1000; 
+    }
+
+     .whatsapp-float img {
+        width: 60px; /* Icon size */
+        height: 60px;
+        background-color: #dc4535;
+        color: #fff;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
 @media (max-width: 990px) {
     .navbar-collapse {
         z-index: 99999;
@@ -29,3 +88,5 @@
     }
     
 }
+
+
