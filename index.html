@@ -7,6 +7,11 @@
     <title>Gym - Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <!-- Flatpickr CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
@@ -15,7 +20,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+                <a class="navbar-brand" href="#">Gym<span>24</span> </a>
                 <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +33,22 @@
                             <a class="nav-link active" aria-current="page" href="#">Advantage</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Membership</a>
+                            <a class="nav-link" href="#membership">Membership</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link ">About</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link ">Trainer</a>
+                            <a class="nav-link" href="#gallery">Gallery</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trainer">Trainer</a>
+                        </li>
+
+                        <button class="nv-btn" id="openModal">Book Online <i class="fa-solid fa-arrow-right"></i></button>
                     </ul>
 
                 </div>
@@ -80,23 +91,8 @@
         </div> -->
 
         <div class="row " id="broadcard">
-            <h2 class="text-white text-center">Reason To Join</h2>
+            <h3>Reason To Join</h3>
 
-            <div class="col-md-6 mt-3">
-                <div class="broadcard-box">
-                    <div class="broadcard-left">
-                        <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
-                    </div>
-
-                    <div class="broadcard-right">
-                        <h4 class="broadcard-head">1500 sq.m</h4>
-                        <p class="broadcard-text">A Speciouse Gym for Sports - a safe distance between
-                            excise machines
-                        </p>
-                    </div>
-                </div>
-            </div>
-                
             <div class="col-md-6 mt-3">
                 <div class="broadcard-box">
                     <div class="broadcard-left">
@@ -141,286 +137,446 @@
                     </div>
                 </div>
             </div>
-            </div>
-        </div>
 
-
-        <div class="container mt-5">
-            <h3 class="h3 text-center">Gym Membership</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="membership-box">
-                        <h4 class="membership-head border-bottom">
-                            Press "Trial" 
-                            $ 0
-                        </h4>
-
-                        <span class="text"><i class="fa-solid fa-check"></i> Access The Gym From 8:00 to 14:00</span>
-
-                        <span class="text"><i class="fa-solid fa-check"></i> <small>The Trainer On Duty will introduce
-                                you to the gym</small></span>
-
-                        <button class="membership-btn">Buy</button>
+            <div class="col-md-6 mt-3">
+                <div class="broadcard-box">
+                    <div class="broadcard-left">
+                        <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
                     </div>
-                </div>
 
-                <!-- <div class="col-md-4">
-                    <div class="membership-box">
-                        <h4 class="membership-head  text-center">
-                            Press "Trial"
-                            $ 0
-                        </h4>
-
-                        <span><i class="fa-solid fa-check"></i> Access The Gym From 8:00 to 14:00</span>
-
-                        <span><i class="fa-solid fa-check"></i> The Trainer On Duty will introduce you to the gym</span>
-
-                        <button class="membership-btn">Buy</button>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="membership-box">
-                        <h4 class="membership-head">
-                            Press "Trial"
-                            $ 0
-                        </h4>
-
-                        <span><i class="fa-solid fa-check"></i> Access The Gym From 8:00 to 14:00</span>
-
-                        <span><i class="fa-solid fa-check"></i> The Trainer On Duty will introduce you to the gym</span>
-
-                        <button class="membership-btn">Buy</button>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="membership-box">
-                        <h4 class="membership-head">
-                            Press "Trial"
-                            $ 0
-                        </h4>
-
-                        <span><i class="fa-solid fa-check"></i> Access The Gym From 8:00 to 14:00</span>
-
-                        <span><i class="fa-solid fa-check"></i> The Trainer On Duty will introduce you to the gym</span>
-
-                        <button class="membership-btn">Buy</button>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="membership-box">
-                        <h4 class="membership-head">
-                            Press "Trial"
-                            $ 0
-                        </h4>
-
-                        <span><i class="fa-solid fa-check"></i> Access The Gym From 8:00 to 14:00</span>
-
-                        <span><i class="fa-solid fa-check"></i> The Trainer On Duty will introduce you to the gym</span>
-
-                        <button class="membership-btn">Buy</button>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="membership-box">
-                        <h4 class="membership-head">
-                            Press "Trial"
-                            $ 0
-                        </h4>
-
-                        <span><i class="fa-solid fa-check"></i> Access The Gym From 8:00 to 14:00</span>
-
-                        <span><i class="fa-solid fa-check"></i> The Trainer On Duty will introduce you to the gym</span>
-
-                        <button class="membership-btn">Buy</button>
-                    </div>
-                </div> -->
-
-
-            </div>
-        </div>
-
-
-        <!-- About Section  -->
-
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-left">
-                        <h3 class="h3">About</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam eveniet, fugit iusto
-                            quaerat quibusdam inventore vel, explicabo possimus itaque minima commodi nihil distinctio
-                            dignissimos dolores necessitatibus aut ullam libero amet?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias distinctio, culpa
-                            praesentium officiis tempora quibusdam consectetur fugiat! Voluptas doloremque error
-                            delectus sit culpa assumenda aperiam explicabo, quidem maiores deleniti.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat nisi, excepturi
-                            laboriosam magni assumenda cumque explicabo aliquam quas optio libero? Nesciunt excepturi,
-                            dolor deserunt porro eligendi impedit. Repellat, esse.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="about-right">
-                        <div class="slider">
-                            <div class="slides">
-                                <img src="image/1.jpg" class="slide active" alt="Image 1">
-                                <img src="image/2.jpg" class="slide" alt="Image 2">
-                                <img src="image/3.jpg" class="slide" alt="Image 3">
-                            </div>
-                            <!-- Navigation Buttons -->
-                            <button class="prev" onclick="prevSlide()">❮</button>
-                            <button class="next" onclick="nextSlide()">❯</button>
-                        </div>
+                    <div class="broadcard-right">
+                        <h4 class="broadcard-head">1500 sq.m</h4>
+                        <p class="broadcard-text">A Speciouse Gym for Sports - a safe distance between
+                            excise machines
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container mt-5">
-            <h3 class="h3 text-center">Trainer Staff</h3>
-            <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                        </div>
-                    </div>
-                </div>
+    </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                        </div>
+    <div class="container" id="membership">
+        <h3>Gym Membership</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="membership-box">
+                    <h4 class="membership-head border-bottom">
+                        Press "Trial" $ 0
+                    </h4>
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> <span class="right">Access The Gym From 8:00 to 14:00</span>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                        </div>
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> 
+                        <span class="right">The Trainer On Duty will introduce
+                            you to the gym</span>
                     </div>
-                </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                        </div>
+                    <div class="membership text-center">
+                        <button class="membership-btn w-100 ">Buy</button>
                     </div>
                 </div>
+            </div>
 
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
-                        </div>
+            <div class="col-md-4">
+                <div class="membership-box">
+                    <h4 class="membership-head border-bottom">
+                        Press "Trial" $ 0
+                    </h4>
+                    <div class="membership-text d-flex">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> <span class="right">Access The Gym From 8:00 to 14:00</span>
+                    </div>
+
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> 
+                        <span class="right">The Trainer On Duty will introduce
+                            you to the gym</span>
+                    </div>
+
+                    <div class="membership text-center">
+                        <button class="membership-btn w-100 ">Buy</button>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-12">
-                    <div class="trainer-box">
-                        <img class="img-fluid" src="image/trainer.jpg" alt="">
-                        <h4>Shariq Ahmad</h4>
-                        <div class="trainer-social">
-                            <span><i class="fa-brands fa-facebook"></i></span>
-                            <span><i class="fa-brands fa-instagram"></i></span>
-                            <span><i class="fa-brands fa-twitter"></i></span>
+            </div>
+
+            <div class="col-md-4">
+                <div class="membership-box">
+                    <h4 class="membership-head border-bottom">
+                        Press "Trial" $ 0
+                    </h4>
+                    <div class="membership-text d-flex">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> <span class="right">Access The Gym From 8:00 to 14:00</span>
+                    </div>
+
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> 
+                        <span class="right">The Trainer On Duty will introduce
+                            you to the gym</span>
+                    </div>
+
+                    <div class="membership text-center">
+                        <button class="membership-btn w-100 ">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="membership-box">
+                    <h4 class="membership-head border-bottom">
+                        Press "Trial" $ 0
+                    </h4>
+                    <div class="membership-text d-flex">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> <span class="right">Access The Gym From 8:00 to 14:00</span>
+                    </div>
+
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> 
+                        <span class="right">The Trainer On Duty will introduce
+                            you to the gym</span>
+                    </div>
+
+                    <div class="membership text-center">
+                        <button class="membership-btn w-100 ">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="membership-box">
+                    <h4 class="membership-head border-bottom">
+                        Press "Trial" $ 0
+                    </h4>
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> <span class="right">Access The Gym From 8:00 to 14:00</span>
+                    </div>
+
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> 
+                        <span class="right">The Trainer On Duty will introduce
+                            you to the gym</span>
+                    </div>
+
+                    <div class="membership text-center">
+                        <button class="membership-btn w-100 ">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="membership-box">
+                    <h4 class="membership-head border-bottom">
+                        Press "Trial" $ 0
+                    </h4>
+                    <div class="membership-text d-flex">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> <span class="right">Access The Gym From 8:00 to 14:00</span>
+                    </div>
+
+                    <div class="membership-text d-flex ">
+                        <span class="left"><i class="fa-solid fa-check"></i></span> 
+                        <span class="right">The Trainer On Duty will introduce
+                            you to the gym</span>
+                    </div>
+
+                    <div class="membership text-center">
+                        <button class="membership-btn w-100 ">Buy</button>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+
+
+    <!-- About Section  -->
+
+    <div class="container" id="about">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-left">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam eveniet, fugit iusto
+                        quaerat quibusdam inventore vel, explicabo possimus itaque minima commodi nihil distinctio
+                        dignissimos dolores necessitatibus aut ullam libero amet?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias distinctio, culpa
+                        praesentium officiis tempora quibusdam consectetur fugiat! Voluptas doloremque error
+                        delectus sit culpa assumenda aperiam explicabo, quidem maiores deleniti.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat nisi, excepturi
+                        laboriosam magni assumenda cumque explicabo aliquam quas optio libero? Nesciunt excepturi,
+                        dolor deserunt porro eligendi impedit. Repellat, esse.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="about-right">
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="image/1.jpg" class="slide active" alt="Image 1">
+                            <img src="image/2.jpg" class="slide" alt="Image 2">
+                            <img src="image/3.jpg" class="slide" alt="Image 3">
                         </div>
+                        <!-- Navigation Buttons -->
+                        <button class="prev" onclick="prevSlide()">❮</button>
+                        <button class="next" onclick="nextSlide()">❯</button>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
 
 
-        <div class="container mt-5" id="footer">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="logo">GYM24</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, eius consequatur doloribus animi
-                        deleniti nam velit saepe molestias mollitia. Doloribus nemo eaque possimus cumque deserunt
-                        explicabo quasi nisi perferendis temporibus.</p>
+    <!-- Gallery Section  -->
+
+    <div class="container" id="gallery">
+        <h3>Gallery</h3>
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="gallery-box">
+                       <img src="image/gallery/g1.avif" alt="">
                 </div>
-                <div class="col-md-4">
-                    <h3 class="h3">Address</h3>
-                    <address>
-                        Enginnering College Road, <br>
-                        Near By Pass, <br>
-                        Saharanpur, <br>
-                        Uttar Pradesh, <br>
-                    </address>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="gallery-box">
+                     <img src="image/gallery/g2.avif" alt="">
                 </div>
-                <div class="col-md-4">
-                    <h3 class="h3">Contact</h3>
-                    <p>Phone: 1234567890</p>
-                    <p>Email: <a href="mailto:info@gyms.com">info@gyms.com</a></p>
-                    <div class="footer-social">
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="gallery-box">
+                     <img src="image/gallery/g3.avif" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <div class="gallery-box">
+                    <img src="image/gallery/g4.avif" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container" id="trainer">
+        <h3>Trainer Staff</h3>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
                         <span><i class="fa-brands fa-facebook"></i></span>
                         <span><i class="fa-brands fa-instagram"></i></span>
                         <span><i class="fa-brands fa-twitter"></i></span>
                     </div>
                 </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                </div>
+            </div>
 
-                <div class="row border-top mt-5">
-                    <div class="col-md-12 d-flex justify-content-center align-items-center">
-                        <p class="text-center text-white mt-3">© 2025 GYM24. All Rights Reserved - Design By Kuldeep</p>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="trainer-box">
+                    <img class="img-fluid" src="image/trainer.jpg" alt="">
+                    <h4>Shariq Ahmad</h4>
+                    <div class="trainer-social">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-twitter"></i></span>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+
+    <div class="container" id="footer">
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <h3 class="logo">GYM24</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, eius consequatur doloribus animi
+                    deleniti nam velit saepe molestias mollitia. Doloribus nemo eaque possimus cumque deserunt
+                    explicabo quasi nisi perferendis temporibus.</p>
+            </div>
+            <div class="col-md-4">
+                <h3 class="h3">Address</h3>
+                <address>
+                    Enginnering College Road, <br>
+                    Near By Pass, <br>
+                    Saharanpur, <br>
+                    Uttar Pradesh, <br>
+                </address>
+            </div>
+            <div class="col-md-4">
+                <h3 class="h3">Contact</h3>
+                <p>Phone: 1234567890</p>
+                <p>Email: <a href="mailto:kuldeep.helps@gmail.com">kuldeep.helps@gmail.com</a></p>
+                <div class="footer-social">
+                    <span><i class="fa-brands fa-facebook"></i></span>
+                    <span><i class="fa-brands fa-instagram"></i></span>
+                    <span><i class="fa-brands fa-twitter"></i></span>
+                </div>
+            </div>
+
+            <div class="row border-top mt-5">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <p class="text-center text-white mt-3">© 2025 GYM24. All Rights Reserved - Design By Kuldeep</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Appointment Model -->
+
+
+    <div id="appointmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close text-end">&times;</span>
+            <h2>Book Gym Appointment</h2>
+            <form id="appointmentForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Select Time:</label>
+                <input type="time" id="time" name="time" required>
+    
+                <button type="submit">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+    
 
 
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Flatpickr JS -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 
 </html>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    flatpickr("#date", {
+        dateFormat: "Y-m-d", 
+        minDate: "today",   
+        disableMobile: true  
+    });
+    flatpickr("#time", {
+        enableTime: true,
+        noCalendar: true,
+        dateFormat: "H:i",  
+        time_24hr: true,    
+        minTime: "06:00",   
+        maxTime: "22:00"    
+    });
+});
+
+</script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let modal = document.getElementById("appointmentModal");
+        let closeBtn = document.querySelector(".close");
+
+        // Check if 'visited' flag exists in localStorage
+        if (!localStorage.getItem("visited")) {
+            modal.style.display = "block";  // Show modal for first-time users
+            localStorage.setItem("visited", "true"); // Set visited flag
+        }
+
+        // Close modal when clicking '×'
+        closeBtn.addEventListener("click", function () {
+            modal.style.display = "none";
+        });
+
+        // Close modal when clicking outside of it
+        window.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        });
+    });
+</script>
+
 
 <script>
     let index = 0;
@@ -446,4 +602,27 @@
 
     // Show the first slide initially
     showSlide(index);
+    document.addEventListener("DOMContentLoaded", function () {
+    let modal = document.getElementById("appointmentModal");
+    let btn = document.getElementById("openModal");
+    let closeBtn = document.querySelector(".close");
+
+    // Open Modal
+    btn.onclick = function () {
+        modal.style.display = "block";
+    };
+
+    // Close Modal
+    closeBtn.onclick = function () {
+        modal.style.display = "none";
+    };
+
+    // Close Modal when Clicking Outside
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    };
+});
+
 </script>
