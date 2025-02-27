@@ -552,29 +552,40 @@
 </script>
 
 
-<script>
+<!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
         let modal = document.getElementById("appointmentModal");
         let closeBtn = document.querySelector(".close");
-
-        // Check if 'visited' flag exists in localStorage
         if (!localStorage.getItem("visited")) {
-            modal.style.display = "block";  // Show modal for first-time users
-            localStorage.setItem("visited", "true"); // Set visited flag
+            modal.style.display = "block";  
+            localStorage.setItem("visited", "true"); 
         }
-
-        // Close modal when clicking '×'
         closeBtn.addEventListener("click", function () {
             modal.style.display = "none";
         });
-
-        // Close modal when clicking outside of it
         window.addEventListener("click", function (event) {
             if (event.target === modal) {
                 modal.style.display = "none";
             }
         });
     });
+</script> -->
+
+
+<script>
+    window.onload = function () {
+    let lastVisit = localStorage.getItem("lastVisitDate");
+    let today = new Date().toDateString(); 
+
+    if (lastVisit !== today) {
+        document.getElementById("appointmentModal").style.display = "block";
+        localStorage.setItem("lastVisitDate", today);
+    }
+    document.querySelector(".close").addEventListener("click", function () {
+        document.getElementById("appointmentModal").style.display = "none";
+    });
+};
+
 </script>
 
 
