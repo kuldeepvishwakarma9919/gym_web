@@ -462,27 +462,7 @@
     </div>
 
 
-    <div id="appointmentModal" class="modal">
-        <div class="modal-content">
-            <span class="close text-end">&times;</span>
-            <h2>Book Gym Appointment</h2>
-            <form id="appointmentForm">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-    
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-    
-                <label for="date">Select Date:</label>
-                <input type="date" id="date" name="date" required>
-    
-                <label for="time">Select Time:</label>
-                <input type="time" id="time" name="time" required>
-    
-                <button type="submit">Book Appointment</button>
-            </form>
-        </div>
-    </div>
+   
 
 
     <div class="container" id="footer">
@@ -528,23 +508,58 @@
 
 </html>
 
-<script>
+<div id="appointmentModal" class="modal">
+    <div class="modal-content">
+        <span class="close text-end">&times;</span>
+        <h2>Book Gym Appointment</h2>
+        <form id="appointmentForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
-document.body.scrollWidth > document.documentElement.clientWidth
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date" class="d-block">Select Date:</label>
+            <input type="date" id="date" name="date" class="w-100" required>
+
+            <label for="time" class="d-block">Select Time:</label>
+            <input type="time" id="time" name="time" class="w-100" required>
+
+            <button type="submit">Book Appointment</button>
+        </form>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelector("#date").style.width = "100%";
+    document.querySelector("#time").style.width = "100%";
+});
 
     document.addEventListener("DOMContentLoaded", function () {
     flatpickr("#date", {
         dateFormat: "Y-m-d", 
         minDate: "today",   
-        disableMobile: true  
+        disableMobile: true,
+        static: true  
     });
     flatpickr("#time", {
+        // disableMobile: true  ,
+        // enableTime: true,
+        // noCalendar: true,
+        // dateFormat: "H:i",  
+        // time_24hr: true,    
+        // minTime: "06:00",   
+        // maxTime: "22:00" 
+        disableMobile: true,
+        static: true,
         enableTime: true,
         noCalendar: true,
         dateFormat: "H:i",  
         time_24hr: true,    
         minTime: "06:00",   
-        maxTime: "22:00"    
+        maxTime: "22:00",
+        width: 100
     });
 });
 

@@ -8,13 +8,6 @@ html, body {
     overflow-x: hidden !important;
     width: 100%;
 }
-
-.container, .container-fluid {
-    /* margin-right: 0 !important; */
-    /* padding-left: 0 !important;
-    margin-right: 0 !important;
-    margin-left: 0 !important; */
-}
 .trainer-box{
     cursor: pointer;
 }
@@ -394,6 +387,13 @@ form input, form button {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     height: 40px;
+}
+
+input.flatpickr-input {
+    width: 100% !important;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
 }
 
 
