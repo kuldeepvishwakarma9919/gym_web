@@ -1,0 +1,17 @@
+@media (max-width: 990px) {
+    .navbar-collapse {
+        z-index: 99999;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: #fff;
+    }
+
+    .navbar .nav-link {
+        color: #000;
+    }
+
+    #broadcard h2 {
+        margin-top: 100px;
+    }
+}
