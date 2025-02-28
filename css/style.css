@@ -512,16 +512,16 @@ input.flatpickr-input {
 .membership-box .text i {
     /* width:20%; */
 }
-.lb-data .lb-close{
+/* .lb-data .lb-close{
     position: absolute;
     top: 12px;
     right: 30px;
     color: #dc4535;
-}
+} */
 
 /* Gallery Section  */
  .lb-outerContainer{
-    position: relative;
+    /* position: relative; */
     /* width: 50% !important;
     height: 400px !important;
     position: fixed !important;
