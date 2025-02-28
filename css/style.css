@@ -512,13 +512,28 @@ input.flatpickr-input {
 .membership-box .text i {
     /* width:20%; */
 }
-
+.lb-data .lb-close{
+    position: absolute;
+    top: 12px;
+    right: 30px;
+    color: #dc4535;
+}
 
 /* Gallery Section  */
-
-#gallery{
-    margin-top: 80px;
+ .lb-outerContainer{
+    position: relative;
+    /* width: 50% !important;
+    height: 400px !important;
+    position: fixed !important;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%); */
 }
+
+/* .lb-outerContainer img{
+    width: 100% !important;
+    height: 100% !important; 
+}   */
 
 #gallery h3 {
     color: white;
@@ -528,7 +543,7 @@ input.flatpickr-input {
     text-align: center;
 }
 .gallery-box {
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
@@ -672,3 +687,9 @@ address {
 .whatsapp-float img:hover {
     transform: scale(1.1);
 } */
+
+
+/* Custom Code Css  */
+.flatpickr-wrapper {
+    display: block;
+}

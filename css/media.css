@@ -107,6 +107,27 @@
 }
 
 
+@media (max-width: 330px) {
+    #broadcard h3{
+        margin-left: 0px !important;
+        text-align: center;
+    }
+    .broadcard-box{
+        width: 100%;
+    }
+
+    .broadcard-right {
+        width: 100%;
+        
+        /* text-align: center; */
+    }
+
+    .broadcard-left {
+        margin-left: 20px;
+        width: 100%;
+    }
+}
+
 @media (max-width: 990px) {
     .navbar-collapse {
         z-index: 99999;

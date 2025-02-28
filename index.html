@@ -9,6 +9,7 @@
     <title>Gym - Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
     <!-- Flatpickr CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
@@ -332,31 +333,40 @@
 
     <!-- Gallery Section  -->
 
-    <div class="container" id="gallery">
+    <div class="container" id="gallery" style="position: relative;">
         <h3>Gallery</h3>
         <div class="row">
             <div class="col-md-4 col-sm-6 col-12">
                 <div class="gallery-box">
-                       <img src="image/gallery/g1.avif" alt="">
+                    <a href="image/gallery/g1.avif" data-lightbox="gallery" data-title="Image 1">
+                        <img src="image/gallery/g1.avif" alt="">
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
                 <div class="gallery-box">
-                     <img src="image/gallery/g2.avif" alt="">
+                    <a href="image/gallery/g2.avif" data-lightbox="gallery" data-title="Image 2">
+                        <img src="image/gallery/g2.avif" alt="">
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
                 <div class="gallery-box">
-                     <img src="image/gallery/g3.avif" alt="">
+                    <a href="image/gallery/g3.avif" data-lightbox="gallery" data-title="Image 3">
+                        <img src="image/gallery/g3.avif" alt="">
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 col-sm-6 col-12">
                 <div class="gallery-box">
-                    <img src="image/gallery/g4.avif" alt="">
+                    <a href="image/gallery/g4.avif" data-lightbox="gallery" data-title="Image 4">
+                        <img src="image/gallery/g4.avif" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
+    
 
 
 
@@ -504,6 +514,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Flatpickr JS -->
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Lightbox2 JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 
 </html>
@@ -529,6 +543,15 @@
         </form>
     </div>
 </div>
+
+
+<script>
+    lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true
+    });
+</script>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
