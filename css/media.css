@@ -6,21 +6,35 @@
 
     }
 
+    .broadcard-box{
+        align-items: normal;
+        width: 100% !important;
+    }
+
+    .membership-box{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    #broadcard i{
+        font-size: 35px;
+    }
+
     .hero-left {
-        height: 90vh;
+        height: 40vh;
     }
 
     .banner-right {
-        height: 70vh;
+        height: 60vh;
     }
 
     .banner-right img {
-        height: 100%;
+        height: 80%;
         width: 100%;
     }
 
     .hero-left h2 {
-        font-size: 60px !important;
+        font-size: 40px !important;
     }
 
     #membership h3 {

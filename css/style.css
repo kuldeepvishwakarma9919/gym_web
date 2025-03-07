@@ -148,7 +148,7 @@ form input, form button {
 
 .hero-left .hero-btn {
     display: flex;
-    width: 100%;
+    width: 50%;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
@@ -529,6 +529,8 @@ input.flatpickr-input {
     left: 50%;
     transform: translateX(-50%); */
 }
+
+
 
 /* .lb-outerContainer img{
     width: 100% !important;
