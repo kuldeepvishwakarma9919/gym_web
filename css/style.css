@@ -21,7 +21,10 @@ html, body {
 
 body {
     max-width: auto;
-    font-family: roboto;
+    /* font-family: "Oswald", sans-serif; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* font-family: roboto; */
+    
     width: 100%;
 }
 
@@ -45,7 +48,6 @@ body {
     border: none;
     border-radius: 10px;
     padding: 5px 20px;
-    /* color: #fff; */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -106,24 +108,48 @@ form input, form button {
 }
 
 
+
+
 /* Model End  */
 .navbar .nav-link {
     color: #fff;
-    font-size: 16px;
+    /* font-size: 16px;
     font-weight: 400;
     cursor: pointer;
     margin-right: 20px;
+    transition: color 0.3s ease-in-out; */
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
     transition: color 0.3s ease-in-out;
+    /* letter-spacing: 1px; */
+    font-family: Oswald, sans-serif;
+
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #f00;
+    color: yellow;
+    border-bottom: 1px solid yellow;
 }
 
 .navbar .nav-link.active {
-    color: #f00;
+    color: yellow;
     font-weight: 500;
+    border-bottom: 1px solid yellow;
+}
+.nav-link::after {
+    position: absolute;
+    left: 0px;
+    top: 22px;
+    height: 1px;
+    width: 100%;
+    content: "";
+    transform: rotate(-20deg);
+    opacity: 0;
+    background: rgb(243, 97, 0);
+    transition: 0.3s;
 }
 
 
@@ -616,6 +642,118 @@ input.flatpickr-input {
 }
 
 
+/* subscribe */
+
+#subscribe{
+    margin-top: 80px;
+}
+
+#subscribe h3{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#subscribe .subscribe-box{
+    background-color: yellow;
+    padding: 33px;
+    border-radius: 10px;
+}
+
+#subscribe .subscribe-box h4{
+    color: black;
+    text-align: center;
+    font-size: 50px;
+}
+#subs{
+   
+    padding: 10px 15px;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 10px 5px; */
+    border-radius: 10px;
+}
+
+#subs input{
+    border: 0 !important;
+    outline: 0 !important;
+    width: 70%;
+}
+#subs button{
+    border: none;
+    background-color: black;
+    /* border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; */
+    border-radius: 10px;
+    color: white;
+    width: 30%;
+    padding: 7px 20px;
+}
+
+.subscribe-box p{
+    font-size: 18px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+
+/* Testimonial Section */
+
+
+#testimonial{
+    margin-top: 80px;
+}
+#testimonial h3{
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.testimonial-carousel {
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.testimonial-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.testimonial-item {
+    min-width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+}
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: black;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* background: #000; */
+    background-color: yellow;
+    /* color: #fff; */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.next-btn {
+    right: 0;
+}
+
+
 /* fooetr section  */
 
 .footer-social {
@@ -695,3 +833,49 @@ address {
 .flatpickr-wrapper {
     display: block;
 }
+
+/* body {
+    background-color: #111;
+} */
+
+.head_span{
+    font-size: 16px;
+    color: #f36100;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.head{
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pricing-card {
+    cursor: pointer;
+    text-align: center;
+    transform: skewY(-4deg);
+    margin-bottom: 30px;
+    position: relative;
+    padding: 40px 30px 52px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(70, 70, 70);
+    border-image: initial;
+    transition: 0.5s;
+    color: white;
+}
+
+.pricing-card:hover{
+    color: black;
+    background-color: #fff;
+}
+.card-1 { background: #888; }
+.card-2 { background: #666; }
+.card-3 { background: #000; }
+.price { color: orange; font-size: 2rem; font-weight: bold; }
+.btn-enroll { background: orange; color: white; border: none; }
+.btn-enroll:hover { background: darkorange; }
