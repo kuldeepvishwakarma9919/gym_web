@@ -23,10 +23,10 @@
 </head>
 
 <body style="background-color: black;">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid mt-3 px-0">
+        <nav class="navbar navbar-expand-lg px-5">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Gym<span>24</span> </a>
+                <a class="navbar-brand" href="#">Gym </a>
                 <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,15 +36,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Advantage</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Advantage</a>
+                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#membership">Membership</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
+                      
 
                         <li class="nav-item">
                             <a class="nav-link" href="#gallery">Gallery</a>
@@ -54,8 +58,10 @@
                             <a class="nav-link" href="#trainer">Trainer</a>
                         </li>
 
-                        <button class="nv-btn" id="openModal">Book Online <i
-                                class="fa-solid fa-arrow-right"></i></button>
+                        <!-- <button class="nv-btn" id="openModal">Book Online <i
+                                class="fa-solid fa-arrow-right"></i></button> -->
+
+                                <input type="search" name="" id="nav-search" placeholder="Search">
                     </ul>
 
                 </div>
@@ -64,46 +70,46 @@
     </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
+    <div class="container" id="hero">
+        <div class="row align-items-center" >
+            <div class="col-lg-7">
                 <div class="hero-left">
                     <div>
                         <!-- <h2 data-aos="fade-up">Free Trial Session <br> With a Trainer</h2> -->
-                        <h2 class="wow animate__animated animate__bounceInLeft">Free Trial Session <br> With a Trainer
+                        <h2 class="wow animate__animated animate__bounceInLeft ">Build Muscle
+                            <hr id="hero_hr">
                         </h2>
+                        
+                        <h3 style="font-style: italic;">Get Fit Get Strong</h3>
+                        
 
-                        <div class="hero-section-btn">
-                            <button class="btn hero-btn">Detailed</button>
+
+
+                        <div class="hero-section-btn d-flex">
+                            <button class="btn hero-btn">Free Trial</button>
+                            <button class="btn hero-btn">Join Online</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
+            <div class="col-lg-5">
                 <div class="banner-right">
-                    <img src="image/banner.avif" class="w-100" alt="">
+                    <img src="image/ddd.png" class="w-100" alt="">
                 </div>
             </div>
         </div>
 
-        <!-- <div class="row">
-            <div class="col-md-6">
-                <div class="banner-right">
-                    <img src="image/banner2.avif" class="w-100" alt="">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="hero-left">
-                    <h2 class="text-white">Free Trial Session <br> With a Trainer</h2>
-                    <button class="btn hero-btn">Detailed</button>
-                </div>
-            </div>
-        </div> -->
-
+      
+        <h3 class="header-section wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">Reason To Join 
+            <hr>     
+        </h3>
+        
         <div class="row " id="broadcard">
-            <h3 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">Reason To Join</h3>
+            
+      
+            
 
-            <div class="col-md-6 mt-3" data-aos="slide-right">
+            <!-- <div class="col-md-6 mt-3" data-aos="slide-right">
                 <div class="broadcard-box">
                     <div class="broadcard-left">
                         <span class="icon"><i class="fa-solid fa-dumbbell"></i></span>
@@ -159,6 +165,74 @@
                         <p class="broadcard-text">A Speciouse Gym for Sports - a safe distance between
                             excise machines
                         </p>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <div class="col-lg-3 col-md-6 mt-3" data-aos="slide-left">
+                <div class="box">
+                    <img src="image/weight1.png" alt="" class="img-fluid text-white">
+                    <h4>Aerobics </h4>
+                    <h2>01</h2>
+                </div>
+            </div> 
+
+            <div class="col-lg-3 col-md-6 mt-3" data-aos="slide-left">
+                <div class="box">
+                    <img src="image/weight1.png" alt="" class="img-fluid text-white">
+                    <h4>Weight Training </h4>
+                    <h2>02</h2>
+                </div>
+            </div> 
+
+            <div class="col-lg-3 col-md-6 mt-3" data-aos="slide-left">
+                <div class="box">
+                    <img src="image/weight1.png" alt="" class="img-fluid text-white">
+                    <h4>Cardio Training </h4>
+                    <h2>03</h2>
+                </div>
+            </div> 
+
+            <div class="col-lg-3 col-md-6 mt-3" data-aos="slide-left">
+                <div class="box">
+                    <img src="image/weight1.png" alt="" class="img-fluid text-white">
+                    <h4>Personal Training </h4>
+                    <h2>04</h2>
+                </div>
+            </div> 
+
+
+
+        </div>
+    </div>
+
+
+    <!-- About Section  -->
+
+    <div class="container" data-aos="fade-up" id="about">
+
+        <h1 class="main_about_title">The Best Gym In Lucknow</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-left wow animate__fadeIn">
+                    <h3 class="header-section">About Us <hr></h3>
+                    <p>
+                        Welcome to Face Off Gym, your ultimate fitness destination, the best gym in Dubai in the heart of Al Barsha, renowned as Dubai’s best and largest gym! With 30,000 square feet of space, our cutting-edge facilities, diverse fitness classes, and expert trainers serve as pillars to support your wellness journey. Face Off Gym takes pride in providing not only the best fitness experience but also convenience with free parking. Join our thriving fitness community dedicated to achieving fitness excellence.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="about-right" data-aos="fade-in">
+                    <div class="slider">
+                        <div class="slides">
+                            <img src="image/1.jpg" class="slide active" alt="Image 1">
+                            <img src="image/2.jpg" class="slide" alt="Image 2">
+                            <img src="image/3.jpg" class="slide" alt="Image 3">
+                        </div>
+                        <!-- Navigation Buttons -->
+                        <button class="prev" onclick="prevSlide()">❮</button>
+                        <button class="next" onclick="nextSlide()">❯</button>
                     </div>
                 </div>
             </div>
@@ -305,11 +379,11 @@
 
     <div class="container py-5">
 
-        <h3 class="head">Pricing Plan</h3>
+        <h3 class="header-section">Pricing Plan <hr></h3>
         <div class="row justify-content-center">
-            <div class="col-lg-10 mx-auto">
+            <div class="col-lg-12 mx-auto">
                 <div class="row">
-                    <div class="col-md-4 mb-4">
+                    <div class="col-lg-3 col-md-4 mb-4">
                         <div class="pricing-card card-1">
                             <h4>Class drop-in</h4>
                             <p class="price">$39.0</p>
@@ -323,7 +397,7 @@
                             <button class="btn btn-enroll w-100">ENROLL NOW</button>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-lg-3 col-md-4 mb-4">
                         <div class="pricing-card card-2">
                             <h4>12 Month unlimited</h4>
                             <p class="price">$99.0</p>
@@ -337,7 +411,22 @@
                             <button class="btn btn-enroll w-100">ENROLL NOW</button>
                         </div>
                     </div>
-                    <div class="col-md-4 mb-4">
+                    <div class="col-lg-3 col-md-4 mb-4">
+                        <div class="pricing-card card-3">
+                            <h4>6 Month unlimited</h4>
+                            <p class="price">$59.0</p>
+                            <p>SINGLE CLASS</p>
+                            <p>Free riding</p>
+                            <p>Unlimited equipments</p>
+                            <p>Personal trainer</p>
+                            <p>Weight losing classes</p>
+                            <p>Month to mouth</p>
+                            <p>No time restriction</p>
+                            <button class="btn btn-enroll w-100">ENROLL NOW</button>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 mb-4">
                         <div class="pricing-card card-3">
                             <h4>6 Month unlimited</h4>
                             <p class="price">$59.0</p>
@@ -357,47 +446,13 @@
     </div>
 
 
-    <!-- About Section  -->
-
-    <div class="container" data-aos="fade-up" id="about">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="about-left wow animate__fadeIn">
-                    <h3>About</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam eveniet, fugit iusto
-                        quaerat quibusdam inventore vel, explicabo possimus itaque minima commodi nihil distinctio
-                        dignissimos dolores necessitatibus aut ullam libero amet?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi alias distinctio, culpa
-                        praesentium officiis tempora quibusdam consectetur fugiat! Voluptas doloremque error
-                        delectus sit culpa assumenda aperiam explicabo, quidem maiores deleniti.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe repellat nisi, excepturi
-                        laboriosam magni assumenda cumque explicabo aliquam quas optio libero? Nesciunt excepturi,
-                        dolor deserunt porro eligendi impedit. Repellat, esse.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="about-right" data-aos="fade-in">
-                    <div class="slider">
-                        <div class="slides">
-                            <img src="image/1.jpg" class="slide active" alt="Image 1">
-                            <img src="image/2.jpg" class="slide" alt="Image 2">
-                            <img src="image/3.jpg" class="slide" alt="Image 3">
-                        </div>
-                        <!-- Navigation Buttons -->
-                        <button class="prev" onclick="prevSlide()">❮</button>
-                        <button class="next" onclick="nextSlide()">❯</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 
 
     <!-- Gallery Section  -->
 
     <div class="container" data-aos="fade-up" id="gallery" style="position: relative;">
-        <h3>Gallery</h3>
+        <h3 class="header-section">Gallery <hr></h3>
         <div class="row">
             <div class="col-md-4 col-sm-6 col-12">
                 <div class="gallery-box" data-aos="fade-up" data-aos-anchor-placement="top-center">
@@ -552,7 +607,7 @@
 
 
     <div class="container" id="trainer">
-        <h3>Trainer Staff</h3>
+        <h3 class="header-section">Trainer Staff <hr></h3>
         <div class="owl-carousel trainer-carousel">
             <div class="trainer-box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                 <img class="img-fluid" src="image/trainer.jpg" alt="">
@@ -603,7 +658,7 @@
     <!-- Testimonial Section -->
 
     <div class="container" id="testimonial">
-        <h3>Testimonial</h3>
+        <h3 class="header-section">Testimonial <hr></h3>
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-5">
                 <div>

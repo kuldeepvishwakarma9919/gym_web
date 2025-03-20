@@ -1,24 +1,30 @@
 @media (max-width: 450px) {
-    #broadcard h3 {
+    .header-section{
+        font-size: 50px;
+        margin-top: 30px;
+    }
+
+    .main_about_title{
+        font-size: 52px;
+    }
+    /* #broadcard h3 {
         margin-top: 50px;
         font-size: 40px !important;
         margin-left: 30px;
 
-    }
+    } */
 
-    .broadcard-box{
+    /* .broadcard-box{
         align-items: normal;
         width: 100% !important;
-    }
+    } */
 
     .membership-box{
         width: 100%;
         margin-top: 20px;
     }
 
-    #broadcard i{
-        font-size: 35px;
-    }
+   
 
     .hero-left {
         height: 40vh;
@@ -27,14 +33,23 @@
     .banner-right {
         height: 60vh;
     }
+    .hero-left .hero-btn{
+        width: 70%;
+    }
+
 
     .banner-right img {
-        height: 80%;
+        height: 100%;
         width: 100%;
     }
 
+    
     .hero-left h2 {
         font-size: 40px !important;
+    }
+
+    #about{
+        margin-top: 40px;
     }
 
     #membership h3 {
@@ -53,6 +68,45 @@
         font-size: 40px !important;
     }
 
+    #testimonial h3{
+        font-size: 50px;
+        font-weight: normal;
+    }
+
+    #subscribe .subscribe-box  {
+        padding: 10px;
+    }
+    #subscribe .subscribe-box h4{
+        font-size: 24px;
+    }
+
+    .subscribe-box p{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #subs {
+        padding: 4px 15px;
+        background-color: #fff;
+        width: 100%;
+        margin: 0 auto;
+        /* padding: 10px 5px; */
+        border-radius: 10px;
+    }
+
+    #subs input{
+        font-size: 14px;
+    }
+
+    #subs button {
+        border: none;
+        background-color: black;
+        border-radius: 5px;
+        color: white;
+        width: 36%;
+        padding: 7px 11px;
+    }
+
 }
 
 
@@ -63,28 +117,28 @@
         font-size: 45px !important;
 
     }
-
-    .broadcard-right {
+    
+    /* .broadcard-right {
         margin-left: 20px;
-    }
+    } */
 
-    .broadcard-right h4 {
+    /* .broadcard-right h4 {
         font-size: 14px;
     }
 
     .broadcard-right p {
         font-size: 12px;
-    }
+    } */
 
 
 }
 
 @media (max-width: 270px) {
-    .broadcard-box {
+    /* .broadcard-box {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    } */
 
     .icon {
         margin-bottom: 12px;
@@ -98,14 +152,14 @@
         font-size: 30px !important;
     }
 
-    #membership h3{
+    /* #membership h3{
         font-size: 22px !important;
     }
 
     #broadcard h3{
         margin-left: 10px;
         font-size: 22px !important;
-    }
+    } */
 
     #gallery h3{
         font-size: 22px !important;
@@ -126,21 +180,20 @@
         margin-left: 0px !important;
         text-align: center;
     }
-    .broadcard-box{
+    /* .broadcard-box{
         width: 100%;
     }
 
     .broadcard-right {
         width: 100%;
-        
-        /* text-align: center; */
-    }
+    } */
 
-    .broadcard-left {
+    /* .broadcard-left {
         margin-left: 20px;
         width: 100%;
-    }
+    } */
 }
+
 
 @media (max-width: 990px) {
     .navbar-collapse {
@@ -148,15 +201,7 @@
         padding: 10px;
         border-radius: 10px;
         margin-top: 10px;
-        background-color: #fff;
-    }
-
-    .navbar .nav-link {
-        color: #000;
-    }
-
-    #broadcard h2 {
-        margin-top: 100px;
+        /* background-color: #fff; */
     }
 
     #appointmentModal .modal-content {
@@ -172,4 +217,34 @@
         z-index: 999999999;
     }
 
+    #hero .hero-left{
+        margin-top: 30px;
+    }
+
+    .hero-left h2 {
+        color: #fff;
+        font-size: 65px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-family: roboto;
+    }
+
+}
+
+@media (max-width: 750px) {
+    .hero-left h2 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        font-family: roboto;
+    }
+
+    #broadcard h3 {
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        font-family: roboto;
+    }
 }
